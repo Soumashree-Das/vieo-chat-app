@@ -6,7 +6,7 @@ const SocketContext = createContext();
 export const useSocket = () => useContext(SocketContext);
 
 export const SocketProvider = ({ children }) => {
-  const socket = io("http://localhost:8000");
+  const socket = io("https://vieo-chat-app-1.onrender.com");
   
   return (
     <SocketContext.Provider value={{socket}}>
