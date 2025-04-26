@@ -7,7 +7,7 @@ const app = express();
 // const httpServer = createServer(app);
 const io = new Server({
     cors: {
-        origin: "*",
+        origin: "https://vieo-chat-app.vercel.app",
         methods: ["POST", "GET"]
     }
 });
